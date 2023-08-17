@@ -173,6 +173,16 @@ function moveForward(player,count){
               }
               
            }
+           else{
+           
+              if(player1Direction==="right"){
+                right(player,player1Btn,50)
+              }
+              else{
+                left(player,player1Btn,50);
+              }
+
+           }
    
 
        }
@@ -205,6 +215,15 @@ function moveForward(player,count){
                 left(player,player2Btn,50);
               }
               
+           }
+           else{
+           
+              if(player2Direction==="right"){
+                right(player,player2Btn,50)
+              }
+              else{
+                left(player,player2Btn,50);
+              }
            }
       
          }

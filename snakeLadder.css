@@ -74,10 +74,9 @@ body{
     color:red;
     left:0px;
     bottom:0px;
-    display:none;
-    animation-name: player1;
-    animation-delay: 0.2s;
-
+    display: none;
+    
+   
     
 }
 
@@ -87,8 +86,7 @@ body{
     left:0px;
     bottom:0px;
     display:none;
-    animation-name: player2;
-    animation-delay: 0.2s;
+   
 }
 
 
