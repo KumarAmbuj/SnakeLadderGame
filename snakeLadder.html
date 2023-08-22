@@ -24,22 +24,58 @@
     ></script>
     <style>
       .modal-dialog {
-        max-height: 600px !important;
-        max-width: 900px !important;
+        max-height: 500px !important;
+        max-width: 600px !important;
+        background-color: black !important;
+      }
+      .modal-body {
         background-color: black !important;
       }
       .modal-body img {
-        max-height: 590px !important;
-        max-width: 865px;
+        max-height: 490px !important;
+        max-width: 565px;
         background-color: black !important;
       }
-      .modal-title {
+      .h5 {
         text-align: center !important;
       }
     </style>
     <link rel="stylesheet" href="snakeLadder.css" />
   </head>
   <body>
+    <!--winner modal-->
+    <div
+      class="modal fade"
+      id="myModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Welcome to Snake And Ladder Game
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body winner-modal">
+            <img src="cong3.png" />
+            <div id="playerWonName" class="playerWonName">
+              player 1 You won !!!!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--winner modal ends-->
+
     <!-- Modal -->
     <div
       class="modal fade"
