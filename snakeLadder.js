@@ -135,7 +135,7 @@ diceRollBtn.addEventListener("click", () => {
       document.getElementById("blackInitialButton").style.display = "none";
       //player2Btn.style.display = "block";
     }
-
+    diceRollBtn.disabled = true;
     moveForward(player, count);
 
     setTimeout(() => {
@@ -147,7 +147,7 @@ diceRollBtn.addEventListener("click", () => {
         //location.reload();
         //reload
       } else if (player2sum === 100) {
-        let aud = new Audio("win");
+        let aud = new Audio("win.mp3");
         aud.play();
         //alert("player2won");
         fun(player);
@@ -231,6 +231,7 @@ diceRollBtn.addEventListener("click", () => {
   }
 });
 function showPlayerTurn(a) {
+  diceRollBtn.disabled = false;
   const id = setTimeout(() => {
     dice.setAttribute("src", "dice.jpg");
     sixCountImage.innerHTML = "";
